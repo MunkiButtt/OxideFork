@@ -182,7 +182,7 @@ end
 local function FetchApiRaw(apiPath)
     if type(request) ~= "function" then return false, nil end
     local ok, req = pcall(request, {
-        Url = "https://api.github.com/repos/xulfo/OxideUiLibary2/contents/" .. apiPath,
+        Url = "https://api.github.com/repos/MunkiButtt/OxideFork/contents/" .. apiPath,
         Method = "GET",
         Headers = {
             ["Accept"]     = "application/vnd.github.raw+json",
