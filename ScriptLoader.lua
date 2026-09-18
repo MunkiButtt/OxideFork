@@ -17,9 +17,9 @@
 -- CONFIG
 -- ══════════════════════════════════════════════════════════════════════════════
 local CFG = {
-    LIB_URL      = "https://raw.githubusercontent.com/xulfo/OxideUiLibary2/main/UiLibary/Libary.lua",
+    LIB_URL      = "https://raw.githubusercontent.com/MunkiButtt/OxideFork/main/UiLibary/Libary.lua",
     -- Base URL for stripped game scripts (github raw).
-    SCRIPTS_BASE = "https://raw.githubusercontent.com/xulfo/OxideUiLibary2/main/scripts/",
+    SCRIPTS_BASE = "https://raw.githubusercontent.com/MunkiButtt/OxideFork/main/scripts/",
     -- Fallback script when PlaceId doesn't match any known game
     FALLBACK  = "Universal.lua",
 }
