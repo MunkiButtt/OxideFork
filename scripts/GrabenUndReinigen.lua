@@ -39,7 +39,7 @@ local LocalPlayer = Players.LocalPlayer
 -- ══════════════════════════════════════════════════════════════════════════════
 local digEnabled       = false
 local digMaxPower      = true
-local RARITY_OPTIONS   = { "common", "uncommon", "rare", "epic", "legendary", "mythic", "divine", "eternal", "transcendent", "omega" }
+local RARITY_OPTIONS   = { "common", "uncommon", "rare", "epic", "legendary", "mythic", "divine", "eternal", "transcendent", "omega", "anomaly", "paradox", "singularity", "genesis", "primordial" }
 -- Multi-select rarity filter: dig only nodes whose rarity is in this set.
 -- Empty set (user unchecked everything) = dig NOTHING.
 local digRarities      = {}
