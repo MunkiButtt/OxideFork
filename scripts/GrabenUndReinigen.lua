@@ -1454,7 +1454,7 @@ end
 
 local function InventoryFull()
     local inv = GetInventory()
-    return inv ~= nil and #inv >= 50 or false
+    return inv ~= nil and #inv >= 1 or false
 end
 
 function DigLoop()
