@@ -1466,8 +1466,7 @@ function DigLoop()
         if not digging and not busy then
             -- never dig into a full backpack
             if InventoryFull() then
-                Notify("Auto Dig", "Backpack full - sell first", "Error", 2)
-                task.wait(3)
+                task.wait(1)
             else
                 local hrp = HumanoidRoot()
                 local inZone = false
