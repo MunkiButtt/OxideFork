@@ -364,6 +364,17 @@ DigSub:AddButton({
         end)
     end),
 })
+DigSub:AddSlider({
+    Name = "Walk Speed",
+    Min = 16,
+    Max = 100,
+    Default = 16,
+    Suffix = "",
+    Flag = "walk_speed",
+    Callback = function(v)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+    end,
+})
 local CleanSub = AutoTab:AddSubTab("Auto Clean")
 CleanSub:AddToggle({
     Name = "Enable Auto Clean",
