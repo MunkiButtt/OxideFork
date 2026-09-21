@@ -1524,8 +1524,13 @@ function DigLoop()
                     end
                     task.wait(1.2)
                 else
-                    print("working")
-                    task.wait(1)
+                    -- no spots in zone: jitter around the zone center
+                    lastRoamPos = nil
+                    local center = NearestDigZoneCenter()
+                    if center then
+                        TeleportTo(center + Vector3.new(math.random(-30, 30), 0, math.random(-30, 30)), 4)
+                    end
+                    task.wait(1.2)
                 end
             end
         else
