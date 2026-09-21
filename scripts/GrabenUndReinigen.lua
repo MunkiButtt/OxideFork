@@ -1465,7 +1465,7 @@ end
 
 local function InventoryFull()
     local inv = GetInventory()
-    return inv ~= nil and #inv >= 50 or false
+    return inv ~= nil and #inv >= 67 or false
 end
 
 function DigLoop()
@@ -1524,13 +1524,8 @@ function DigLoop()
                     end
                     task.wait(1.2)
                 else
-                    -- no spots in zone: jitter around the zone center
-                    lastRoamPos = nil
-                    local center = NearestDigZoneCenter()
-                    if center then
-                        TeleportTo(center + Vector3.new(math.random(-30, 30), 0, math.random(-30, 30)), 4)
-                    end
-                    task.wait(1.2)
+                    print("working")
+                    task.wait(1)
                 end
             end
         else
