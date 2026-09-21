@@ -1525,7 +1525,7 @@ function DigLoop()
                     task.wait(1.2)
                 else
                     print("working")
-                    task.wait(10)
+                    task.wait(1)
                 end
             end
         else
