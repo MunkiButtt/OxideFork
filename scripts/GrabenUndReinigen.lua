@@ -1508,7 +1508,7 @@ function DigLoop()
                     end
                 elseif not inZone then
                     -- outside the dig zone: teleport to zone center
-                    GoDigArea()
+                    Notify("Auto Dig", "You're not in zone", "Error")
                     task.wait(1.5)
                 elseif target and IsInDigZone(target) then
                     -- roam toward a known spot INSIDE the dig zone, but never
@@ -1524,7 +1524,6 @@ function DigLoop()
                     end
                     task.wait(1.2)
                 else
-                    print("working")
                     task.wait(1)
                 end
             end
